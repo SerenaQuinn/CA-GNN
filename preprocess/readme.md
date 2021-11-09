@@ -65,6 +65,29 @@ This is a code implementation on Yelp Dataset. The implementation on Amazon Data
 Besides, we just release the full-batch version of our code. If the dataset you use is larger and your memory is not enough, split the full batch of reviews into mini-batches of reviews, and sample neighbors as [GraphSAGE](https://github.com/williamleif/GraphSAGE) do.
 
 
+##Citation
+
+```
+@inproceedings{DBLP:conf/cikm/QuLWZZJHXZG20,
+  author    = {Xiaoru Qu and
+               Zhao Li and
+               Jialin Wang and
+               Zhipeng Zhang and
+               Pengcheng Zou and
+               Junxiao Jiang and
+               Jiaming Huang and
+               Rong Xiao and
+               Ji Zhang and
+               Jun Gao},
+  title     = {Category-aware Graph Neural Networks for Improving E-commerce Review
+               Helpfulness Prediction},
+  booktitle = {{CIKM} '20: The 29th {ACM} International Conference on Information
+               and Knowledge Management, Virtual Event, Ireland, October 19-23, 2020},
+  pages     = {2693--2700},
+  publisher = {{ACM}},
+  year      = {2020},
+}
+```
 
 
 
