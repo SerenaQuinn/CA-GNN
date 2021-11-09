@@ -1,14 +1,17 @@
 #CA-GNN
+
 This repository is a tensorflow implementation of the CIKM'2020 paper: 
 
 Category-aware Graph Neural Networks for Improving E-commerce Review Helpfulness Prediction
 
 
 ##Requirements:
+
 Tensorflow == 1.13
 
 
 ##Dataset:
+
 You can download the Yelp dataset (Round 13) from [here](https://www.yelp.com/dataset), and put the json files along the side of the floders **preprocess** and **src**:
 
 ```
@@ -33,6 +36,7 @@ You can download the Yelp dataset (Round 13) from [here](https://www.yelp.com/da
 
 
 ##Data preprocessing:
+
 Run the preprocessing code files in the following order:
 
 ```
@@ -50,10 +54,12 @@ Run the preprocessing code files in the following order:
 
 
 ##Model training
+
 Run new_main.py
 
 
 ## Changing the number of clusters:
+
 If you want to change the number of clusters, modify and run the files in the following order:
 
 ```
@@ -65,6 +71,7 @@ If you want to change the number of clusters, modify and run the files in the fo
 
 
 ##Notice:
+
 This is a code implementation on Yelp Dataset. The implementation on Amazon Dataset is similar to the code in this repository. If you want to test CA-GNN on Amazon Dataset, modify the data preprocessing code. And the node embeddings of the amazon users and items are trainable id embeddings.
 
 Besides, we just release the full-batch version of our code. If the dataset you use is larger and your memory is not enough, split the full batch of reviews into mini-batches of reviews, and sample neighbors as [GraphSAGE](https://github.com/williamleif/GraphSAGE) do.
